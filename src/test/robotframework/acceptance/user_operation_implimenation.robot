@@ -10,6 +10,9 @@ A valid "${user_alias}"
 "${user_alias}" with valid name "${user_name}"
     Set actor    ${user_alias}    name    ${user_name}
 
+"${user_alias}" with valid "${key_name}" "${key_value}"
+    Set actor    ${user_alias}    ${key_name}    ${key_value}
+
 "${user_alias}" with valid email "${user_email}"
     Set actor    ${user_alias}    email    ${user_email}
 
@@ -26,4 +29,6 @@ user creates A New user "${user_alias}"
     #${respo}   evaluate    json.loads('''${response}''')    json
     Set Suite Variable      ${respo}   ${response}
 "${user_alias}" receives a response with code "${code}"
-    Should Be Equal As Strings    ${respo["code"]}   ${code}
+    Log  ${respo.json}
+    Should Be Equal As Strings   ${respo.json['code']}   ${code}
+        

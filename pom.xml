@@ -4,11 +4,11 @@
   <artifactId>acceptance-test</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
-  	<dependency>
-  		<groupId>com.github.marketsquare</groupId>
-  		<artifactId>robotframework-httprequestlibrary</artifactId>
-  		<version>0.0.17</version>
-  	</dependency>
+    <dependency>
+        <groupId>com.github.hi-fi</groupId>
+        <artifactId>robotframework-httprequestlibrary</artifactId>
+        <version>0.0.15</version>
+    </dependency>
   	<dependency>
   		<groupId>com.github.hi-fi</groupId>
   		<artifactId>robotframework-dblibrary</artifactId>
@@ -36,7 +36,7 @@
             <plugin>
                 <groupId>org.robotframework</groupId>
                 <artifactId>robotframework-maven-plugin</artifactId>
-                <version>1.7.2</version>
+                <version>1.8.0</version>
                 <executions>
                     <execution>
                         <id>robot</id>
