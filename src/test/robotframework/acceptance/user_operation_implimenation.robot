@@ -31,4 +31,11 @@ user creates A New user "${user_alias}"
 "${user_alias}" receives a response with code "${code}"
     Log  ${respo.json}
     Should Be Equal As Strings   ${respo.json['code']}   ${code}
-        
+
+Respose contains Error Message Field "${fieldname}" "${errormessage}"
+    &{temp}   Set Variable     ${respo.json['data']}[0]
+    Log  ${temp.field}
+    Log  ${temp.message}
+    Log  ${errormessage}
+    Should Contain   ${temp.field}      ${fieldname}     msg=Invalid Field ${fieldname} not mentioned in the error!
+    Should Contain   ${temp.message}    ${errormessage}  msg=${fieldname} ${errormessage} not mentioned in the error!  
