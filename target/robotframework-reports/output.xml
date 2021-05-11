@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generator="Robot 3.2.2 (Jython 2.7.2 on java16)" generated="20210511 21:36:11.185">
+<suite source="C:\Praveen_Learning\Robotframework\robottest\src\test\robotframework\acceptance" name="Acceptance" id="s1">
+<suite source="C:\Praveen_Learning\Robotframework\robottest\src\test\robotframework\acceptance\user_opreations.robot" name="User Opreations" id="s1-s1">
+<test name="Create user, valid details" id="s1-s1-t1">
+<kw library="user_operation_implimenation" name="Given A valid &quot;user_a&quot;">
+<kw library="common_implimentation" name="Create actor">
+<arguments>
+<arg>${user_alias}</arg>
+</arguments>
+<kw library="BuiltIn" name="Create Dictionary">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>${Empty}</arg>
+<arg>${Empty}</arg>
+</arguments>
+<assign>
+<var>&amp;{dict}</var>
+</assign>
+<msg level="INFO" timestamp="20210511 21:36:11.773">&amp;{dict} = { = }</msg>
+<status endtime="20210511 21:36:11.773" starttime="20210511 21:36:11.756" status="PASS"></status>
+</kw>
+<kw library="Collections" name="Set To Dictionary">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${actors}</arg>
+<arg>${dict_name}</arg>
+<arg>${dict}</arg>
+</arguments>
+<status endtime="20210511 21:36:11.788" starttime="20210511 21:36:11.774" status="PASS"></status>
+</kw>
+<kw library="Collections" name="Remove From Dictionary">
+<doc>Removes the given ``keys`` from the ``dictionary``.</doc>
+<arguments>
+<arg>${actors["${dict_name}"]}</arg>
+<arg>${Empty}</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:11.802">Removed item with key '' and value ''.</msg>
+<status endtime="20210511 21:36:11.803" starttime="20210511 21:36:11.789" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:11.804" starttime="20210511 21:36:11.745" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:11.805" starttime="20210511 21:36:11.741" status="PASS"></status>
+</kw>
+<kw library="user_operation_implimenation" name="And &quot;user_a&quot; with valid &quot;name&quot; &quot;James Thomas4&quot;">
+<kw library="common_implimentation" name="Set actor">
+<arguments>
+<arg>${user_alias}</arg>
+<arg>${key_name}</arg>
+<arg>${key_value}</arg>
+</arguments>
+<kw library="Collections" name="Set To Dictionary">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${actors["${dict_name}"]}</arg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+</arguments>
+<status endtime="20210511 21:36:11.834" starttime="20210511 21:36:11.821" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:11.836" starttime="20210511 21:36:11.809" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:11.837" starttime="20210511 21:36:11.807" status="PASS"></status>
+</kw>
+<kw library="user_operation_implimenation" name="And &quot;user_a&quot; with valid email &quot;James.Thomas@test4.com&quot;">
+<kw library="common_implimentation" name="Set actor">
+<arguments>
+<arg>${user_alias}</arg>
+<arg>email</arg>
+<arg>${user_email}</arg>
+</arguments>
+<kw library="Collections" name="Set To Dictionary">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${actors["${dict_name}"]}</arg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+</arguments>
+<status endtime="20210511 21:36:11.869" starttime="20210511 21:36:11.854" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:11.870" starttime="20210511 21:36:11.841" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:11.871" starttime="20210511 21:36:11.840" status="PASS"></status>
+</kw>
+<kw library="user_operation_implimenation" name="And &quot;user_a&quot; with valid gender &quot;Male&quot;">
+<kw library="common_implimentation" name="Set actor">
+<arguments>
+<arg>${user_alias}</arg>
+<arg>gender</arg>
+<arg>${user_gender}</arg>
+</arguments>
+<kw library="Collections" name="Set To Dictionary">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${actors["${dict_name}"]}</arg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+</arguments>
+<status endtime="20210511 21:36:11.915" starttime="20210511 21:36:11.896" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:11.917" starttime="20210511 21:36:11.875" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:11.918" starttime="20210511 21:36:11.872" status="PASS"></status>
+</kw>
+<kw library="user_operation_implimenation" name="And &quot;user_a&quot; with valid status &quot;Active&quot;">
+<kw library="common_implimentation" name="Set actor">
+<arguments>
+<arg>${user_alias}</arg>
+<arg>status</arg>
+<arg>${user_status}</arg>
+</arguments>
+<kw library="Collections" name="Set To Dictionary">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${actors["${dict_name}"]}</arg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+</arguments>
+<status endtime="20210511 21:36:11.956" starttime="20210511 21:36:11.935" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:11.957" starttime="20210511 21:36:11.921" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${actors}</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:11.966">{u'user_a': {u'gender': u'Male', u'name': u'James Thomas4', u'email': u'James.Thomas@test4.com', u'status': u'Active'}}</msg>
+<status endtime="20210511 21:36:11.967" starttime="20210511 21:36:11.958" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:11.968" starttime="20210511 21:36:11.919" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${actors}</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:11.977">{u'user_a': {u'gender': u'Male', u'name': u'James Thomas4', u'email': u'James.Thomas@test4.com', u'status': u'Active'}}</msg>
+<status endtime="20210511 21:36:11.978" starttime="20210511 21:36:11.968" status="PASS"></status>
+</kw>
+<kw library="user_operation_implimenation" name="When user creates A New user &quot;user_a&quot;">
+<kw library="common_implimentation" name="Get actor">
+<arguments>
+<arg>${user_alias}</arg>
+</arguments>
+<assign>
+<var>${data_load}</var>
+</assign>
+<kw library="Collections" name="Get From Dictionary">
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<arguments>
+<arg>${actors}</arg>
+<arg>${dict_name}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg level="INFO" timestamp="20210511 21:36:12.000">${value} = {u'name': u'James Thomas4', u'email': u'James.Thomas@test4.com', u'gender': u'Male', u'status': u'Active'}</msg>
+<status endtime="20210511 21:36:12.001" starttime="20210511 21:36:11.990" status="PASS"></status>
+</kw>
+<msg level="INFO" timestamp="20210511 21:36:12.003">${data_load} = {u'name': u'James Thomas4', u'email': u'James.Thomas@test4.com', u'gender': u'Male', u'status': u'Active'}</msg>
+<status endtime="20210511 21:36:12.003" starttime="20210511 21:36:11.981" status="PASS"></status>
+</kw>
+<kw library="user_operation_rest" name="post a new user creation rest call">
+<arguments>
+<arg>${data_load}</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<kw library="BuiltIn" name="Create Dictionary">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>Accept</arg>
+<arg>application/json</arg>
+<arg>Content-Type</arg>
+<arg>application/json</arg>
+<arg>Authorization</arg>
+<arg>Bearer 69bf10c972c282ca767c5405f90fb1449f8b80b96c3d82bdea0e4cfa2b023cf8</arg>
+</arguments>
+<assign>
+<var>&amp;{headers}</var>
+</assign>
+<msg level="INFO" timestamp="20210511 21:36:12.043">&amp;{headers} = { Accept=application/json | Content-Type=application/json | Authorization=Bearer 69bf10c972c282ca767c5405f90fb1449f8b80b96c3d82bdea0e4cfa2b023cf8 }</msg>
+<status endtime="20210511 21:36:12.043" starttime="20210511 21:36:12.010" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Evaluate">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>json.dumps(${payload})</arg>
+<arg>json</arg>
+</arguments>
+<assign>
+<var>${json_payload}</var>
+</assign>
+<msg level="INFO" timestamp="20210511 21:36:12.121">${json_payload} = {"gender": "Male", "name": "James Thomas4", "email": "James.Thomas@test4.com", "status": "Active"}</msg>
+<status endtime="20210511 21:36:12.121" starttime="20210511 21:36:12.046" status="PASS"></status>
+</kw>
+<kw library="HttpRequestLibrary" name="Create Session">
+<doc>Create a HTTP session to a server</doc>
+<arguments>
+<arg>httpbin</arg>
+<arg>${testServer}</arg>
+</arguments>
+<status endtime="20210511 21:36:12.699" starttime="20210511 21:36:12.122" status="PASS"></status>
+</kw>
+<kw library="HttpRequestLibrary" name="Post Request">
+<doc> Send a POST request on the session object found using the</doc>
+<arguments>
+<arg>httpbin</arg>
+<arg>/users</arg>
+<arg>data=${json_payload}</arg>
+<arg>headers=${headers}</arg>
+</arguments>
+<assign>
+<var>${resp}</var>
+</assign>
+<msg level="INFO" timestamp="20210511 21:36:14.177">${resp} = {"status_code":200,"text":"{\"code\":422,\"meta\":null,\"data\":[{\"field\":\"email\",\"message\":\"has already been taken\"}]}","content":"{\"code\":422,\"meta\":null,\"data\":[{\"field\":\"email\",\...</msg>
+<status endtime="20210511 21:36:14.178" starttime="20210511 21:36:12.701" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${resp.status_code}</arg>
+<arg>200</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:14.196">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status endtime="20210511 21:36:14.197" starttime="20210511 21:36:14.179" status="PASS"></status>
+</kw>
+<msg level="INFO" timestamp="20210511 21:36:14.199">${response} = {"status_code":200,"text":"{\"code\":422,\"meta\":null,\"data\":[{\"field\":\"email\",\"message\":\"has already been taken\"}]}","content":"{\"code\":422,\"meta\":null,\"data\":[{\"field\":\"email\",\...</msg>
+<status endtime="20210511 21:36:14.199" starttime="20210511 21:36:12.004" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Set Suite Variable">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${respo}</arg>
+<arg>${response}</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:14.203">${respo} = {"status_code":200,"text":"{\"code\":422,\"meta\":null,\"data\":[{\"field\":\"email\",\"message\":\"has already been taken\"}]}","content":"{\"code\":422,\"meta\":null,\"data\":[{\"field\":\"email\",\...</msg>
+<status endtime="20210511 21:36:14.203" starttime="20210511 21:36:14.200" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:14.204" starttime="20210511 21:36:11.979" status="PASS"></status>
+</kw>
+<kw library="user_operation_implimenation" name="Then &quot;user_a&quot; receives a response with code &quot;201.0&quot;">
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${respo.json}</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:14.214">{u'code': 422.0, u'meta': None, u'data': [{field=email, message=has already been taken}]}</msg>
+<status endtime="20210511 21:36:14.214" starttime="20210511 21:36:14.207" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${respo.json['code']}</arg>
+<arg>${code}</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:14.225">Argument types are:
+&lt;type 'float'&gt;
+&lt;type 'unicode'&gt;</msg>
+<msg level="FAIL" timestamp="20210511 21:36:14.233">422.0 != 201.0</msg>
+<status endtime="20210511 21:36:14.234" starttime="20210511 21:36:14.215" status="FAIL"></status>
+</kw>
+<status endtime="20210511 21:36:14.241" starttime="20210511 21:36:14.206" status="FAIL"></status>
+</kw>
+<tags>
+<tag>Test1</tag>
+</tags>
+<status critical="yes" endtime="20210511 21:36:14.245" starttime="20210511 21:36:11.735" status="FAIL">422.0 != 201.0</status>
+</test>
+<test name="Create user, Invalid details" id="s1-s1-t2">
+<kw library="user_operation_implimenation" name="Given A valid &quot;user_a&quot;">
+<kw library="common_implimentation" name="Create actor">
+<arguments>
+<arg>${user_alias}</arg>
+</arguments>
+<kw library="BuiltIn" name="Create Dictionary">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>${Empty}</arg>
+<arg>${Empty}</arg>
+</arguments>
+<assign>
+<var>&amp;{dict}</var>
+</assign>
+<msg level="INFO" timestamp="20210511 21:36:14.282">&amp;{dict} = { = }</msg>
+<status endtime="20210511 21:36:14.283" starttime="20210511 21:36:14.265" status="PASS"></status>
+</kw>
+<kw library="Collections" name="Set To Dictionary">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${actors}</arg>
+<arg>${dict_name}</arg>
+<arg>${dict}</arg>
+</arguments>
+<status endtime="20210511 21:36:14.304" starttime="20210511 21:36:14.284" status="PASS"></status>
+</kw>
+<kw library="Collections" name="Remove From Dictionary">
+<doc>Removes the given ``keys`` from the ``dictionary``.</doc>
+<arguments>
+<arg>${actors["${dict_name}"]}</arg>
+<arg>${Empty}</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:14.315">Removed item with key '' and value ''.</msg>
+<status endtime="20210511 21:36:14.316" starttime="20210511 21:36:14.304" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:14.317" starttime="20210511 21:36:14.256" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:14.318" starttime="20210511 21:36:14.254" status="PASS"></status>
+</kw>
+<kw library="user_operation_implimenation" name="And &quot;user_a&quot; with valid &quot;name&quot; &quot;James Thomas2&quot;">
+<kw library="common_implimentation" name="Set actor">
+<arguments>
+<arg>${user_alias}</arg>
+<arg>${key_name}</arg>
+<arg>${key_value}</arg>
+</arguments>
+<kw library="Collections" name="Set To Dictionary">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${actors["${dict_name}"]}</arg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+</arguments>
+<status endtime="20210511 21:36:14.354" starttime="20210511 21:36:14.339" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:14.355" starttime="20210511 21:36:14.320" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:14.356" starttime="20210511 21:36:14.319" status="PASS"></status>
+</kw>
+<kw library="user_operation_implimenation" name="And &quot;user_a&quot; with valid email &quot;%&amp;#¤&amp;#¤%#¤%#¤%&quot;">
+<kw library="common_implimentation" name="Set actor">
+<arguments>
+<arg>${user_alias}</arg>
+<arg>email</arg>
+<arg>${user_email}</arg>
+</arguments>
+<kw library="Collections" name="Set To Dictionary">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${actors["${dict_name}"]}</arg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+</arguments>
+<status endtime="20210511 21:36:14.386" starttime="20210511 21:36:14.372" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:14.386" starttime="20210511 21:36:14.359" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:14.387" starttime="20210511 21:36:14.357" status="PASS"></status>
+</kw>
+<kw library="user_operation_implimenation" name="And &quot;user_a&quot; with valid gender &quot;Male&quot;">
+<kw library="common_implimentation" name="Set actor">
+<arguments>
+<arg>${user_alias}</arg>
+<arg>gender</arg>
+<arg>${user_gender}</arg>
+</arguments>
+<kw library="Collections" name="Set To Dictionary">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${actors["${dict_name}"]}</arg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+</arguments>
+<status endtime="20210511 21:36:14.422" starttime="20210511 21:36:14.407" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:14.423" starttime="20210511 21:36:14.390" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:14.424" starttime="20210511 21:36:14.388" status="PASS"></status>
+</kw>
+<kw library="user_operation_implimenation" name="And &quot;user_a&quot; with valid status &quot;Active&quot;">
+<kw library="common_implimentation" name="Set actor">
+<arguments>
+<arg>${user_alias}</arg>
+<arg>status</arg>
+<arg>${user_status}</arg>
+</arguments>
+<kw library="Collections" name="Set To Dictionary">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${actors["${dict_name}"]}</arg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+</arguments>
+<status endtime="20210511 21:36:14.459" starttime="20210511 21:36:14.441" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:14.460" starttime="20210511 21:36:14.427" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${actors}</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:14.465">{u'user_a': {u'gender': u'Male', u'name': u'James Thomas2', u'email': u'%&amp;#\xa4&amp;#\xa4%#\xa4%#\xa4%', u'status': u'Active'}}</msg>
+<status endtime="20210511 21:36:14.469" starttime="20210511 21:36:14.460" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:14.470" starttime="20210511 21:36:14.425" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${actors}</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:14.475">{u'user_a': {u'gender': u'Male', u'name': u'James Thomas2', u'email': u'%&amp;#\xa4&amp;#\xa4%#\xa4%#\xa4%', u'status': u'Active'}}</msg>
+<status endtime="20210511 21:36:14.475" starttime="20210511 21:36:14.470" status="PASS"></status>
+</kw>
+<kw library="user_operation_implimenation" name="When user creates A New user &quot;user_a&quot;">
+<kw library="common_implimentation" name="Get actor">
+<arguments>
+<arg>${user_alias}</arg>
+</arguments>
+<assign>
+<var>${data_load}</var>
+</assign>
+<kw library="Collections" name="Get From Dictionary">
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<arguments>
+<arg>${actors}</arg>
+<arg>${dict_name}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg level="INFO" timestamp="20210511 21:36:14.492">${value} = {u'name': u'James Thomas2', u'email': u'%&amp;#\xa4&amp;#\xa4%#\xa4%#\xa4%', u'gender': u'Male', u'status': u'Active'}</msg>
+<status endtime="20210511 21:36:14.492" starttime="20210511 21:36:14.482" status="PASS"></status>
+</kw>
+<msg level="INFO" timestamp="20210511 21:36:14.493">${data_load} = {u'name': u'James Thomas2', u'email': u'%&amp;#\xa4&amp;#\xa4%#\xa4%#\xa4%', u'gender': u'Male', u'status': u'Active'}</msg>
+<status endtime="20210511 21:36:14.493" starttime="20210511 21:36:14.477" status="PASS"></status>
+</kw>
+<kw library="user_operation_rest" name="post a new user creation rest call">
+<arguments>
+<arg>${data_load}</arg>
+</arguments>
+<assign>
+<var>${response}</var>
+</assign>
+<kw library="BuiltIn" name="Create Dictionary">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>Accept</arg>
+<arg>application/json</arg>
+<arg>Content-Type</arg>
+<arg>application/json</arg>
+<arg>Authorization</arg>
+<arg>Bearer 69bf10c972c282ca767c5405f90fb1449f8b80b96c3d82bdea0e4cfa2b023cf8</arg>
+</arguments>
+<assign>
+<var>&amp;{headers}</var>
+</assign>
+<msg level="INFO" timestamp="20210511 21:36:14.526">&amp;{headers} = { Accept=application/json | Content-Type=application/json | Authorization=Bearer 69bf10c972c282ca767c5405f90fb1449f8b80b96c3d82bdea0e4cfa2b023cf8 }</msg>
+<status endtime="20210511 21:36:14.526" starttime="20210511 21:36:14.500" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Evaluate">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>json.dumps(${payload})</arg>
+<arg>json</arg>
+</arguments>
+<assign>
+<var>${json_payload}</var>
+</assign>
+<msg level="INFO" timestamp="20210511 21:36:14.537">${json_payload} = {"gender": "Male", "name": "James Thomas2", "email": "%&amp;#\u00a4&amp;#\u00a4%#\u00a4%#\u00a4%", "status": "Active"}</msg>
+<status endtime="20210511 21:36:14.537" starttime="20210511 21:36:14.527" status="PASS"></status>
+</kw>
+<kw library="HttpRequestLibrary" name="Create Session">
+<doc>Create a HTTP session to a server</doc>
+<arguments>
+<arg>httpbin</arg>
+<arg>${testServer}</arg>
+</arguments>
+<status endtime="20210511 21:36:14.547" starttime="20210511 21:36:14.538" status="PASS"></status>
+</kw>
+<kw library="HttpRequestLibrary" name="Post Request">
+<doc> Send a POST request on the session object found using the</doc>
+<arguments>
+<arg>httpbin</arg>
+<arg>/users</arg>
+<arg>data=${json_payload}</arg>
+<arg>headers=${headers}</arg>
+</arguments>
+<assign>
+<var>${resp}</var>
+</assign>
+<msg level="INFO" timestamp="20210511 21:36:15.665">${resp} = {"status_code":200,"text":"{\"code\":422,\"meta\":null,\"data\":[{\"field\":\"email\",\"message\":\"is invalid\"}]}","content":"{\"code\":422,\"meta\":null,\"data\":[{\"field\":\"email\",\"message\":\...</msg>
+<status endtime="20210511 21:36:15.665" starttime="20210511 21:36:14.548" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${resp.status_code}</arg>
+<arg>200</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:15.681">Argument types are:
+&lt;type 'int'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status endtime="20210511 21:36:15.682" starttime="20210511 21:36:15.666" status="PASS"></status>
+</kw>
+<msg level="INFO" timestamp="20210511 21:36:15.685">${response} = {"status_code":200,"text":"{\"code\":422,\"meta\":null,\"data\":[{\"field\":\"email\",\"message\":\"is invalid\"}]}","content":"{\"code\":422,\"meta\":null,\"data\":[{\"field\":\"email\",\"message\":\...</msg>
+<status endtime="20210511 21:36:15.685" starttime="20210511 21:36:14.494" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Set Suite Variable">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${respo}</arg>
+<arg>${response}</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:15.691">${respo} = {"status_code":200,"text":"{\"code\":422,\"meta\":null,\"data\":[{\"field\":\"email\",\"message\":\"is invalid\"}]}","content":"{\"code\":422,\"meta\":null,\"data\":[{\"field\":\"email\",\"message\":\...</msg>
+<status endtime="20210511 21:36:15.692" starttime="20210511 21:36:15.688" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:15.692" starttime="20210511 21:36:14.476" status="PASS"></status>
+</kw>
+<kw library="user_operation_implimenation" name="Then &quot;user_a&quot; receives a response with code &quot;422.0&quot;">
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${respo.json}</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:15.707">{u'code': 422.0, u'meta': None, u'data': [{field=email, message=is invalid}]}</msg>
+<status endtime="20210511 21:36:15.708" starttime="20210511 21:36:15.697" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${respo.json['code']}</arg>
+<arg>${code}</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:15.726">Argument types are:
+&lt;type 'float'&gt;
+&lt;type 'unicode'&gt;</msg>
+<status endtime="20210511 21:36:15.727" starttime="20210511 21:36:15.708" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:15.728" starttime="20210511 21:36:15.694" status="PASS"></status>
+</kw>
+<kw library="user_operation_implimenation" name="And Respose contains Error Message Field &quot;email&quot; &quot;is invalid&quot;">
+<kw library="BuiltIn" name="Set Variable">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${respo.json['data']}[0]</arg>
+</arguments>
+<assign>
+<var>&amp;{temp}</var>
+</assign>
+<msg level="INFO" timestamp="20210511 21:36:15.751">&amp;{temp} = { field=email | message=is invalid }</msg>
+<status endtime="20210511 21:36:15.751" starttime="20210511 21:36:15.730" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${temp.field}</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:15.763">email</msg>
+<status endtime="20210511 21:36:15.764" starttime="20210511 21:36:15.753" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${temp.message}</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:15.770">is invalid</msg>
+<status endtime="20210511 21:36:15.771" starttime="20210511 21:36:15.765" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${errormessage}</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:15.775">is invalid</msg>
+<status endtime="20210511 21:36:15.776" starttime="20210511 21:36:15.771" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Contain">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${temp.field}</arg>
+<arg>${fieldname}</arg>
+<arg>msg=Invalid Field ${fieldname} not mentioned in the error!</arg>
+</arguments>
+<status endtime="20210511 21:36:15.793" starttime="20210511 21:36:15.776" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Contain">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${temp.message}</arg>
+<arg>${errormessage}</arg>
+<arg>msg=${fieldname} ${errormessage} not mentioned in the error!</arg>
+</arguments>
+<status endtime="20210511 21:36:15.818" starttime="20210511 21:36:15.793" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:15.819" starttime="20210511 21:36:15.729" status="PASS"></status>
+</kw>
+<tags>
+<tag>SIT_Regression</tag>
+<tag>Test1</tag>
+</tags>
+<status critical="yes" endtime="20210511 21:36:15.819" starttime="20210511 21:36:14.250" status="PASS"></status>
+</test>
+<status endtime="20210511 21:36:15.826" starttime="20210511 21:36:11.441" status="FAIL"></status>
+</suite>
+<suite source="C:\Praveen_Learning\Robotframework\robottest\src\test\robotframework\acceptance\web_test_demo.robot" name="Web Test Demo" id="s1-s2">
+<test name="Create Account,Page Content" id="s1-s2-t1">
+<kw library="web_test_immplimentation" name="Given User_a open &quot;amazon.com&quot;">
+<kw library="SeleniumLibrary" name="Open Browser">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://www.${URL}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:16.279">browserName: chrome</msg>
+<msg level="INFO" timestamp="20210511 21:36:16.294">Opening browser 'chrome'</msg>
+<status endtime="20210511 21:36:19.206" starttime="20210511 21:36:16.263" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Title Should Be">
+<doc>Verify the current page title is exactly ``title``</doc>
+<arguments>
+<arg>Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs &amp; more</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:19.262">Page title is 'Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs &amp; more'.</msg>
+<status endtime="20210511 21:36:19.263" starttime="20210511 21:36:19.207" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:19.264" starttime="20210511 21:36:16.262" status="PASS"></status>
+</kw>
+<kw library="web_test_immplimentation" name="And user_a click Sign in Account">
+<kw library="SeleniumLibrary" name="Click Element">
+<doc>Click on the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="nav-link-accountList-nav-line-1"]</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:19.281">Clicking element 'xpath=//*[@id="nav-link-accountList-nav-line-1"]'.</msg>
+<status endtime="20210511 21:36:20.197" starttime="20210511 21:36:19.269" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:20.198" starttime="20210511 21:36:19.266" status="PASS"></status>
+</kw>
+<kw library="web_test_immplimentation" name="And User A Sign In Page Opened">
+<kw library="SeleniumLibrary" name="Title Should Be">
+<doc>Verify the current page title is exactly ``title``</doc>
+<arguments>
+<arg>Amazon Sign-In</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:20.213">Page title is 'Amazon Sign-In'.</msg>
+<status endtime="20210511 21:36:20.214" starttime="20210511 21:36:20.201" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:20.215" starttime="20210511 21:36:20.199" status="PASS"></status>
+</kw>
+<kw library="web_test_immplimentation" name="when user_a click Create your Amazon Account">
+<kw library="SeleniumLibrary" name="Click Element">
+<doc>Click on the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="createAccountSubmit"]</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:20.225">Clicking element 'xpath=//*[@id="createAccountSubmit"]'.</msg>
+<status endtime="20210511 21:36:20.902" starttime="20210511 21:36:20.217" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:20.903" starttime="20210511 21:36:20.216" status="PASS"></status>
+</kw>
+<kw library="web_test_immplimentation" name="Then &quot;Amazon Registration&quot; Page should be displayed">
+<kw library="SeleniumLibrary" name="Title Should Be">
+<doc>Verify the current page title is exactly ``title``</doc>
+<arguments>
+<arg>Amazon Registration</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:20.918">Page title is 'Amazon Registration'.</msg>
+<status endtime="20210511 21:36:20.919" starttime="20210511 21:36:20.905" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:20.919" starttime="20210511 21:36:20.904" status="PASS"></status>
+</kw>
+<kw library="web_test_immplimentation" name="And The &quot;Amazon Registration&quot; Page should contain Label &quot;Create account&quot;">
+<kw library="SeleniumLibrary" name="Element Should Be Visible">
+<doc>Verify the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[contains(text(), "Create account")]</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:20.929">Verifying element 'xpath=//*[contains(text(), "Create account")]' is visible.</msg>
+<status endtime="20210511 21:36:20.987" starttime="20210511 21:36:20.921" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:20.988" starttime="20210511 21:36:20.920" status="PASS"></status>
+</kw>
+<kw library="web_test_immplimentation" name="And The &quot;Amazon Registration&quot; Page should contain Label &quot;Your name&quot;">
+<kw library="SeleniumLibrary" name="Element Should Be Visible">
+<doc>Verify the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[contains(text(),"Your name")]</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:21.002">Verifying element 'xpath=//*[contains(text(),"Your name")]' is visible.</msg>
+<status endtime="20210511 21:36:21.050" starttime="20210511 21:36:20.991" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:21.050" starttime="20210511 21:36:20.989" status="PASS"></status>
+</kw>
+<kw library="web_test_immplimentation" name="And The &quot;Amazon Registration&quot; Page should contain Textbox &quot;customerName&quot;">
+<kw library="SeleniumLibrary" name="Element Should Be Visible">
+<doc>Verify the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//input[@name="customerName" and @type="text"]</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:21.058">Verifying element 'xpath=//input[@name="customerName" and @type="text"]' is visible.</msg>
+<status endtime="20210511 21:36:21.098" starttime="20210511 21:36:21.052" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:21.099" starttime="20210511 21:36:21.051" status="PASS"></status>
+</kw>
+<kw library="web_test_immplimentation" name="And The &quot;Amazon Registration&quot; Page should contain Label &quot;Email&quot;">
+<kw library="SeleniumLibrary" name="Element Should Be Visible">
+<doc>Verify the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[contains(text(), "Email")]</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:21.108">Verifying element 'xpath=//*[contains(text(), "Email")]' is visible.</msg>
+<status endtime="20210511 21:36:21.141" starttime="20210511 21:36:21.101" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:21.142" starttime="20210511 21:36:21.100" status="PASS"></status>
+</kw>
+<kw library="web_test_immplimentation" name="And The &quot;Amazon Registration&quot; Page should contain Textbox &quot;email&quot;">
+<kw library="SeleniumLibrary" name="Element Should Be Visible">
+<doc>Verify the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//input[@name="email" and @type="email"]</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:21.151">Verifying element 'xpath=//input[@name="email" and @type="email"]' is visible.</msg>
+<status endtime="20210511 21:36:21.183" starttime="20210511 21:36:21.144" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:21.184" starttime="20210511 21:36:21.142" status="PASS"></status>
+</kw>
+<kw library="web_test_immplimentation" name="And The &quot;Amazon Registration&quot; Page should contain Label &quot;Password&quot;">
+<kw library="SeleniumLibrary" name="Element Should Be Visible">
+<doc>Verify the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//*[contains(text(),"Password")]</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:21.196">Verifying element 'xpath=//*[contains(text(),"Password")]' is visible.</msg>
+<status endtime="20210511 21:36:21.230" starttime="20210511 21:36:21.186" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:21.231" starttime="20210511 21:36:21.185" status="PASS"></status>
+</kw>
+<kw library="web_test_immplimentation" name="And The &quot;Amazon Registration&quot; Page should contain Textbox &quot;password&quot;">
+<kw library="SeleniumLibrary" name="Element Should Be Visible">
+<doc>Verify the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//input[@name="password" and @type="password"]</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:21.240">Verifying element 'xpath=//input[@name="password" and @type="password"]' is visible.</msg>
+<status endtime="20210511 21:36:21.272" starttime="20210511 21:36:21.234" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:21.273" starttime="20210511 21:36:21.232" status="PASS"></status>
+</kw>
+<kw library="web_test_immplimentation" name="And The &quot;Amazon Registration&quot; Page's &quot;password&quot; Textbox should show &quot;At least 6 characters&quot;">
+<kw library="SeleniumLibrary" name="Get Element Attribute">
+<doc>Returns value of attribute from element locator.</doc>
+<arguments>
+<arg>xpath=//*[@name="password" and @type="password"]</arg>
+<arg>placeholder</arg>
+</arguments>
+<assign>
+<var>${placeholder}</var>
+</assign>
+<msg level="INFO" timestamp="20210511 21:36:21.323">${placeholder} = At least 6 characters</msg>
+<status endtime="20210511 21:36:21.323" starttime="20210511 21:36:21.275" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal As Strings">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${placeholder}</arg>
+<arg>At least 6 characters</arg>
+</arguments>
+<status endtime="20210511 21:36:21.333" starttime="20210511 21:36:21.323" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:21.334" starttime="20210511 21:36:21.273" status="PASS"></status>
+</kw>
+<kw library="web_test_immplimentation" name="And The &quot;Amazon Registration&quot; Page should show the informattion &quot;Passwords must be at least 6 characters.&quot;">
+<kw library="SeleniumLibrary" name="Element Text Should Be">
+<doc>Verify the text of the element identified by ``locator`` is exactly ``text``.</doc>
+<arguments>
+<arg>xpath=//*[@class="a-box a-alert-inline a-alert-inline-info auth-inlined-information-message a-spacing-top-mini"]//*[@class="a-box-inner a-alert-container"]//*[@class="a-alert-content"]</arg>
+<arg>Passwords must be at least 6 characters.</arg>
+</arguments>
+<status endtime="20210511 21:36:21.376" starttime="20210511 21:36:21.335" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:21.378" starttime="20210511 21:36:21.334" status="PASS"></status>
+</kw>
+<kw library="web_test_immplimentation" name="And The &quot;Amazon Registration&quot; Page should contain Label &quot;Re-enter password&quot;">
+<kw library="SeleniumLibrary" name="Element Should Be Visible">
+<doc>Verify the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//label[contains(text(),'Re-enter password')]</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:21.388">Verifying element 'xpath=//label[contains(text(),'Re-enter password')]' is visible.</msg>
+<status endtime="20210511 21:36:21.629" starttime="20210511 21:36:21.380" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:21.630" starttime="20210511 21:36:21.379" status="PASS"></status>
+</kw>
+<kw library="web_test_immplimentation" name="And The &quot;Amazon Registration&quot; Page should contain Textbox &quot;passwordCheck&quot;">
+<kw library="SeleniumLibrary" name="Element Should Be Visible">
+<doc>Verify the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath=//input[@name="passwordCheck" and @type="password"]</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:21.637">Verifying element 'xpath=//input[@name="passwordCheck" and @type="password"]' is visible.</msg>
+<status endtime="20210511 21:36:21.671" starttime="20210511 21:36:21.632" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:21.671" starttime="20210511 21:36:21.631" status="PASS"></status>
+</kw>
+<kw library="web_test_immplimentation" name="And The &quot;Amazon Registration&quot; Page should display the &quot;submit&quot; Button &quot;Create your Amazon account&quot;">
+<kw library="SeleniumLibrary" name="Element Text Should Be">
+<doc>Verify the text of the element identified by ``locator`` is exactly ``text``.</doc>
+<arguments>
+<arg>xpath=//*[@id="continue" and @type="submit"]//following-sibling::span</arg>
+<arg>Create your Amazon account</arg>
+</arguments>
+<status endtime="20210511 21:36:21.711" starttime="20210511 21:36:21.673" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:21.712" starttime="20210511 21:36:21.672" status="PASS"></status>
+</kw>
+<kw library="web_test_immplimentation" name="And The &quot;Amazon Registration&quot; Page should display &quot;Already have an account? Sign-In&quot; with link to &quot;https://www.amazon.com/ap/signin?&quot;">
+<kw library="SeleniumLibrary" name="Element Text Should Be">
+<doc>Verify the text of the element identified by ``locator`` is exactly ``text``.</doc>
+<arguments>
+<arg>xpath=//a[contains(text(),'Sign-In')]//parent::div[@class="a-row"]</arg>
+<arg>Already have an account? Sign-In</arg>
+</arguments>
+<status endtime="20210511 21:36:21.757" starttime="20210511 21:36:21.715" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Get Element Attribute">
+<doc>Returns value of attribute from element locator.</doc>
+<arguments>
+<arg>xpath=//a[contains(text(),'Sign-In')]</arg>
+<arg>href</arg>
+</arguments>
+<assign>
+<var>${url}</var>
+</assign>
+<msg level="INFO" timestamp="20210511 21:36:21.807">${url} = https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_ya_signin&amp;prevRID=TC4R7TBV2A6Y106YT6C1&amp;openid.identity=http%3A%2F%2Fspecs.open...</msg>
+<status endtime="20210511 21:36:21.807" starttime="20210511 21:36:21.758" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Contain">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>https://www.amazon.com/ap/signin?</arg>
+</arguments>
+<status endtime="20210511 21:36:21.817" starttime="20210511 21:36:21.808" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:21.818" starttime="20210511 21:36:21.713" status="PASS"></status>
+</kw>
+<kw library="web_test_immplimentation" name="And The &quot;Amazon Registration&quot; Page should display &quot;Purchasing for work? Create a business account&quot; with link to &quot;https://www.amazon.com/business/register/org/landing?ref_=ap_altreg_ab&quot;">
+<kw library="SeleniumLibrary" name="Element Text Should Be">
+<doc>Verify the text of the element identified by ``locator`` is exactly ``text``.</doc>
+<arguments>
+<arg>xpath=//a[contains(text(),'Create a business account')]//parent::div[@class="a-row"]</arg>
+<arg>Purchasing for work? Create a business account</arg>
+</arguments>
+<status endtime="20210511 21:36:21.861" starttime="20210511 21:36:21.820" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Get Element Attribute">
+<doc>Returns value of attribute from element locator.</doc>
+<arguments>
+<arg>xpath=//a[contains(text(),'Create a business account')]</arg>
+<arg>href</arg>
+</arguments>
+<assign>
+<var>${url}</var>
+</assign>
+<msg level="INFO" timestamp="20210511 21:36:21.907">${url} = https://www.amazon.com/business/register/org/landing?ref_=ap_altreg_ab</msg>
+<status endtime="20210511 21:36:21.907" starttime="20210511 21:36:21.862" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Contain">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>https://www.amazon.com/business/register/org/landing?ref_=ap_altreg_ab</arg>
+</arguments>
+<status endtime="20210511 21:36:21.918" starttime="20210511 21:36:21.907" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:21.918" starttime="20210511 21:36:21.819" status="PASS"></status>
+</kw>
+<kw library="web_test_immplimentation" name="And The &quot;Amazon Registration&quot; Page should display Legal section &quot;By creating an account, you agree to Amazon's Conditions of Use and Privacy Notice.&quot;">
+<kw library="SeleniumLibrary" name="Element Text Should Be">
+<doc>Verify the text of the element identified by ``locator`` is exactly ``text``.</doc>
+<arguments>
+<arg>xpath=//div[@id="legalTextRow" and @class="a-row a-spacing-top-medium a-size-small"]</arg>
+<arg>By creating an account, you agree to Amazon's Conditions of Use and Privacy Notice.</arg>
+</arguments>
+<status endtime="20210511 21:36:21.965" starttime="20210511 21:36:21.920" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Page Should Contain Link">
+<doc>Verify the link identified by ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath=//div//a[@href="/gp/help/customer/display.html/ref=ap_register_notification_condition_of_use?ie=UTF8&amp;nodeId=508088"]</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:22.001">Current page contains link 'xpath=//div//a[@href="/gp/help/customer/display.html/ref=ap_register_notification_condition_of_use?ie=UTF8&amp;nodeId=508088"]'.</msg>
+<status endtime="20210511 21:36:22.002" starttime="20210511 21:36:21.966" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Page Should Contain Link">
+<doc>Verify the link identified by ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath=//div//a[@href="/gp/help/customer/display.html/ref=ap_register_notification_privacy_notice?ie=UTF8&amp;nodeId=468496"]</arg>
+</arguments>
+<msg level="INFO" timestamp="20210511 21:36:22.030">Current page contains link 'xpath=//div//a[@href="/gp/help/customer/display.html/ref=ap_register_notification_privacy_notice?ie=UTF8&amp;nodeId=468496"]'.</msg>
+<status endtime="20210511 21:36:22.031" starttime="20210511 21:36:22.003" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Get Element Attribute">
+<doc>Returns value of attribute from element locator.</doc>
+<arguments>
+<arg>//div[@id="legalTextRow"]//a</arg>
+<arg>href</arg>
+</arguments>
+<assign>
+<var>${url}</var>
+</assign>
+<msg level="INFO" timestamp="20210511 21:36:22.066">${url} = https://www.amazon.com/gp/help/customer/display.html/ref=ap_register_notification_condition_of_use?ie=UTF8&amp;nodeId=508088</msg>
+<status endtime="20210511 21:36:22.067" starttime="20210511 21:36:22.032" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Contain">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>https://www.amazon.com/gp/help/customer/display.html/ref=ap_register_notification_condition_of_use?ie=UTF8&amp;nodeId=508088</arg>
+</arguments>
+<status endtime="20210511 21:36:22.075" starttime="20210511 21:36:22.067" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="Get Element Attribute">
+<doc>Returns value of attribute from element locator.</doc>
+<arguments>
+<arg>//div[@id="legalTextRow"]//a//following-sibling::a</arg>
+<arg>href</arg>
+</arguments>
+<assign>
+<var>${url}</var>
+</assign>
+<msg level="INFO" timestamp="20210511 21:36:22.106">${url} = https://www.amazon.com/gp/help/customer/display.html/ref=ap_register_notification_privacy_notice?ie=UTF8&amp;nodeId=468496</msg>
+<status endtime="20210511 21:36:22.107" starttime="20210511 21:36:22.075" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Contain">
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>https://www.amazon.com/gp/help/customer/display.html/ref=ap_register_notification_privacy_notice?ie=UTF8&amp;nodeId=468496</arg>
+</arguments>
+<status endtime="20210511 21:36:22.115" starttime="20210511 21:36:22.107" status="PASS"></status>
+</kw>
+<status endtime="20210511 21:36:22.116" starttime="20210511 21:36:21.919" status="PASS"></status>
+</kw>
+<kw library="SeleniumLibrary" name="And Close Browser">
+<doc>Closes the current browser instance.</doc>
+<status endtime="20210511 21:36:23.179" starttime="20210511 21:36:22.117" status="PASS"></status>
+</kw>
+<tags>
+<tag>webtest</tag>
+</tags>
+<status critical="yes" endtime="20210511 21:36:23.180" starttime="20210511 21:36:16.259" status="PASS"></status>
+</test>
+<status endtime="20210511 21:36:23.183" starttime="20210511 21:36:15.840" status="PASS"></status>
+</suite>
+<status endtime="20210511 21:36:23.198" starttime="20210511 21:36:11.215" status="FAIL"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1">Critical Tests</stat>
+<stat pass="2" fail="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">SIT_Regression</stat>
+<stat pass="1" fail="1">Test1</stat>
+<stat pass="1" fail="0">webtest</stat>
+</tag>
+<suite>
+<stat pass="2" fail="1" name="Acceptance" id="s1">Acceptance</stat>
+<stat pass="1" fail="1" name="User Opreations" id="s1-s1">Acceptance.User Opreations</stat>
+<stat pass="1" fail="0" name="Web Test Demo" id="s1-s2">Acceptance.Web Test Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
