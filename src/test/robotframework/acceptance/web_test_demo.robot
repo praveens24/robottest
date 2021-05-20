@@ -3,14 +3,9 @@ Library   SeleniumLibrary
 Library   OperatingSystem
 Resource  web_test_immplimentation.robot
 
-***Variables***
-${Browser}  chrome
-${URL}  https://www.amazon.com/
-
- 
 *** Test Cases ***
-Create Account,Page Content
-    [Tags]   webtest
+CreateAccountPageContent
+    [Tags]   demoweb
 	Given User_a open "amazon.com"
       And user_a click Sign in Account
 	  And User A Sign In Page Opened 

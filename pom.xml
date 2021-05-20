@@ -40,6 +40,7 @@
     </dependency>
   </dependencies>
   <properties>
+        <include.tag />
         <robot.env></robot.env>
         <robot.output>output.xml</robot.output>
         <robot.dont_use_db>0</robot.dont_use_db>
@@ -61,7 +62,7 @@
             <plugin>
                 <groupId>org.robotframework</groupId>
                 <artifactId>robotframework-maven-plugin</artifactId>
-                <version>1.8.0</version>
+                <version>2.0.0</version>
                 <executions>
                     <execution>
                         <id>robot</id>
@@ -82,6 +83,9 @@
                     <variableFiles>
                         <variableFile>${project.basedir}/src/test/robotframework/acceptance/env_${robot.env}.py</variableFile>
                     </variableFiles>
+                     <includes>
+                        <tag>${include.tag}</tag>
+                    </includes>
                     <excludes>
                         <tag>norun</tag>
                     </excludes>

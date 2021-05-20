@@ -26,8 +26,10 @@ A valid "${user_alias}"
 user creates A New user "${user_alias}"
     ${data_load}  Get actor    ${user_alias}
     ${response}   post a new user creation rest call   ${data_load}
+    Evaluate   pdb.Pdb(stdout=sys.__stdout__).set_trace()  modules=sys, pdb
     #${respo}   evaluate    json.loads('''${response}''')    json
     Set Suite Variable      ${respo}   ${response}
+
 "${user_alias}" receives a response with code "${code}"
     Log  ${respo.json}
     Should Be Equal As Strings   ${respo.json['code']}   ${code}
